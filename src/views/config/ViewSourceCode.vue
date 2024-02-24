@@ -1,6 +1,6 @@
 <template>
-    <div class="main-header">
-        Soldier76 可视化配置
+    <div class="page-container">
+        This is a Vue component.
     </div>
 </template>
 
@@ -9,5 +9,5 @@
 </script>
 
 <style lang="scss" scoped>
-@import "./variables.scss";
+// css
 </style>

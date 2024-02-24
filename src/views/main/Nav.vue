@@ -1,7 +1,7 @@
 <template>
     <div class="nav-container">
         <div class="logo">
-            Logo
+            v5.0.3
         </div>
 
         <el-menu
