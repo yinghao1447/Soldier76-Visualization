@@ -10,8 +10,11 @@
     "prepare": "husky install"
   },
   "dependencies": {
+    "@highlightjs/vue-plugin": "^2.1.0",
     "@vueuse/core": "^10.2.1",
+    "clipboardy": "3",
     "element-plus": "^2.3.7",
+    "highlight.js": "^11.9.0",
     "lodash-es": "^4.17.21",
     "numeral": "^2.0.6",
     "pinia": "^2.1.3",

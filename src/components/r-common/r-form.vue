@@ -13,6 +13,7 @@
         >
             <component
                 v-bind="formItemCompProps(item)"
+                class="el-form-item__comp"
                 :is="item.render ?? formTypes(item.type)"
             >
                 <template
@@ -23,6 +24,15 @@
                     <component :is="slot" />
                 </template>
             </component>
+
+            <!-- tip -->
+            <el-alert
+                show-icon
+                type="info"
+                v-if="item.tip"
+                :closable="false"
+                :title="item.tip"
+            />
         </el-form-item>
     </el-form>
 </template>
@@ -135,7 +145,9 @@ defineExpose({
     }
 
     .el-form-item__content {
-        max-width: var(--content-width);
+        .el-form-item__comp {
+            max-width: var(--content-width);
+        }
 
         > .el-date-editor {
             width: 100%;
